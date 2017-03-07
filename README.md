@@ -1,12 +1,13 @@
 # SwapiAngular
 
 ## Core TODO
+- SW logo header
 - Pull SWAPI character data by episode number
 - Display data in table
 - Button selectors for different episode numbers
+- Input box to search character names
 - Table data sorted by column headers
 - Styling
-- SW logo header
 
 ## Stretch Goals
 - State management (save data from API call into application state to lower the API requests as a user switches episodes)
