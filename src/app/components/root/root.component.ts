@@ -27,11 +27,12 @@ export class RootComponent implements OnInit {
   handleEpisodeChange(episode) {
     this.currentEpisode = episode;
     this.currentCharacters = this.swapi.allEpisodes[episode].characters.map(url => this.swapi.allCharacters[url]);
+    this.currentFilter = {type: null, direction: null};
   }
 
   handleFilterChange(filter) {
-    this.currentFilter = this.currentFilter.type === filter ? 
-                         {type: filter, direction: 'desc'} : 
+    this.currentFilter = this.currentFilter.type === filter && this.currentFilter.direction === 'asc' ?
+                         {type: filter, direction: 'desc'} :
                          {type: filter, direction: 'asc'}
     this.currentCharacters.sort((a, b) => {
       if (this.currentFilter.direction === 'asc') {
