@@ -1,20 +1,13 @@
 # SwapiAngular
 
-## Core TODO
+## TODO
 + SW logo header
 + Pull SWAPI character data by episode number
-- Display data in table
-- Button selectors for different episode numbers
++ Display data in table
++ Button selectors for different episode numbers
++ Table data sorted by column headers
++ Styling
 - Input box to search character names
-- Table data sorted by column headers
-- Styling
-
-## Stretch Goals
-- State management (save data from API call into application state to lower the API requests as a user switches episodes)
-- When a user switches episodes, play scrolling SW episode intro
-- Skip intro button
-- Skip intro check box (saved in application state)
-- Music
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
