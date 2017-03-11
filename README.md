@@ -1,8 +1,8 @@
 # SwapiAngular
 
 ## Core TODO
-- SW logo header
-- Pull SWAPI character data by episode number
++ SW logo header
++ Pull SWAPI character data by episode number
 - Display data in table
 - Button selectors for different episode numbers
 - Input box to search character names

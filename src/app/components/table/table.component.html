@@ -1,0 +1,24 @@
+<div class='container'>
+  <table class='table'>
+    <thead>
+      <th (click)="onChangeFilter.emit('name')">Name</th>
+      <th (click)="onChangeFilter.emit('species')">Species</th>
+      <th (click)="onChangeFilter.emit('homeworld')">Home World</th>
+      <th (click)="onChangeFilter.emit('birthyear')">Birth Year</th>
+      <th (click)="onChangeFilter.emit('height')">Height</th>
+      <th (click)="onChangeFilter.emit('mass')">Mass</th>
+      <th (click)="onChangeFilter.emit('gender')">Gender</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let character of characters">
+        <td>{{character.name}}</td>
+        <td>{{character.species}}</td>
+        <td>{{character.homeWorld}}</td>
+        <td>{{character.birthYear}}</td>
+        <td>{{character.height}}</td>
+        <td>{{character.mass}}</td>
+        <td>{{character.gender}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

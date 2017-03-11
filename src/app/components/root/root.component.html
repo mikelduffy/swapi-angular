@@ -1,0 +1,11 @@
+<div class='main'>
+  <app-logo></app-logo>
+  <app-episode-selector 
+    [currentEpisode]="currentEpisode"
+    (onChangeEpisode)="handleEpisodeChange($event)"
+    ></app-episode-selector>
+  <app-table
+    [characters]="currentCharacters"
+    (onChangeFilter)="handleFilterChange($event)"
+  ></app-table>
+</div>
